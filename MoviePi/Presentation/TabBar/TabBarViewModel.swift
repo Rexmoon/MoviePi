@@ -18,7 +18,7 @@ final class TabBarViewModel<R: TabBarRouter> {
     }
 }
 
-// MARK: - Navegation
+// MARK: - Navigation
 
 extension TabBarViewModel {
     func didSelect(tag: Int) {

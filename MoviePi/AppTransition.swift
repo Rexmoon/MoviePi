@@ -6,6 +6,7 @@
 //
 
 enum AppTransition {
+    case showAuthentication
     case showTabBar
     
     var identifier: String { String(describing: self) }
@@ -13,6 +14,7 @@ enum AppTransition {
     func coordinatorFor<R: AppRouter>(router: R) -> Coordinator {
         return switch self {
             case .showTabBar: TabBarCoordinator(router: router)
+            case .showAuthentication: AuthenticationCoordinator(router: router)
         }
     }
 }

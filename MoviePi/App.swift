@@ -20,7 +20,7 @@ final class App {
 
 extension App: Coordinator {
     func start() {
-        process(route: .showTabBar)
+        process(route: .showAuthentication)
     }
 }
 
